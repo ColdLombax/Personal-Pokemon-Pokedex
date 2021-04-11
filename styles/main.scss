@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+// OTHER SCSS FILES
+@import './mixins';
+@import './variables';
+
+@import './welcome-page';
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,5 +13,9 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #505050;
+
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
 }
+
