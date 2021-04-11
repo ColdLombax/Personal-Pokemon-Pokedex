@@ -12,12 +12,16 @@
     <div class="content welcome-page">
         <img class="home-pokeball" src="../images/pokeball-icon-main.svg" alt="poekball">
         <p class="welcome-text">WELCOME</p>
-        <form class="first-time">
-            <input type="text" placeholder="NAME">
+
+        <!-- PREHAPS REWRITE SOME OF THIS? -->
+        <form id="first-time">
+            <input type="text" class="form-name" placeholder="NAME" required>
         </form>
-        <p class="launch-text btn">LAUNCH</p>
-        <div class="home-bottom-bar"></div>
+        <input type="submit" form="first-time" class="launch-button" value="LAUNCH">
+        <!--  -->
+        
     </div>
+    <div class="nav-bar"></div>
 </body>
 <script src="main.js"></script>
 </html>

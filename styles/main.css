@@ -44,25 +44,34 @@
   margin-top: 60px;
 }
 
-.welcome-page .launch-text {
-  margin-top: 60px;
-}
-
-.welcome-page .launch-text {
+.welcome-page .launch-button {
   background-color: #ffffff;
   padding: 20px 50px;
+  margin-top: 60px;
   border-radius: 2em;
+  border: none;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: #333;
   font-size: 1.5em;
   cursor: pointer;
 }
 
-.welcome-page .home-bottom-bar {
+.nav-bar {
   background-color: #FF7373;
   width: 100%;
   height: 40px;
   position: absolute;
   bottom: 0px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-bar {
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 * {
