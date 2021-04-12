@@ -40,8 +40,13 @@
 }
 
 .welcome-page .welcome-text {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: 60px;
+}
+
+.welcome-page .user-text {
+  font-size: 1.5em;
+  padding-top: 10px;
 }
 
 .welcome-page .launch-button {
