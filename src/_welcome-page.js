@@ -1,4 +1,5 @@
 import { newElement } from './_functions';
+import { loadPokedex } from './_pokedex-page';
 
 const content = document.querySelector('.content');
 
@@ -52,7 +53,9 @@ function launchButton () {
         // REMOVE ELEMENTS WITH DELAY
         setTimeout(() => {
             content.clear();
-        }, 600);
+            content.classList.remove('welcome-page');
+            loadPokedex();
+        }, 1000);
     }
     // GETTING NAME DATA AND STORING TO LOCALSTORAGE
     if (document.querySelector('#name') != null) {

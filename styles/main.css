@@ -68,8 +68,6 @@
   height: 40px;
   position: absolute;
   bottom: 0px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nav-bar {
@@ -77,6 +75,71 @@
   transition-property: height;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+}
+
+.pokedex-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.pokedex-page .navbar-circle {
+  background-color: #FF7373;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  z-index: 5;
+}
+
+.pokedex-page .pokeball-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pokedex-page .pokeball-link img {
+  height: 0px;
+  position: absolute;
+  top: 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition-property: height, -webkit-transform;
+  transition-property: height, -webkit-transform;
+  transition-property: height, transform;
+  transition-property: height, transform, -webkit-transform;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.grid-container {
+  background-color: orange;
+  width: 80%;
+  height: 50px;
+}
+
+.nav-bar {
+  top: 0px;
 }
 
 * {
