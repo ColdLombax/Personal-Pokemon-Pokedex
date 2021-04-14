@@ -23,7 +23,7 @@ This project was built using...
 * [JavaScript](https://www.javascript.com/)
 * [Poke API](https://pokeapi.co/)
 * [SCSS](https://sass-lang.com/)
-* [Sprites](https://pokemondb.net/sprites);
+* [Sprites](https://pokemondb.net/sprites)
 
 ## Future Goals
 
