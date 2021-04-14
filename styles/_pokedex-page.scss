@@ -40,16 +40,77 @@
 }
 
 .grid-container {
-    background-color: orange;
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
     .pokebox {
-        
+        height: 200px;
+        background-color: lightgreen;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        filter: $filter-dropshadow-primary;
+
+        &::after {
+            content: '';
+            background-color: $container-primary-dark-color;
+            width: 100%;
+            height: 10px;
+            position: absolute;
+            top: 80px;
+        }
+
+        img {
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            z-index: 1;
+            filter: $filter-dropshadow-primary;
+        }
+
+        .details-container {
+            position: absolute;
+            top: 135px;
+            width: 100px;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            .name {
+                background-color: $container-primary-dark-color;
+                border-radius: 0.3em;
+                padding: 2.5px;
+                width: 100%;
+                font-size: 0.9em;
+                text-align: center;
+                filter: $filter-dropshadow-primary;
+            }
+
+            .type {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.8em;
+                background-color: $container-primary-dark-color;
+                padding: 5px;
+                font-size: 0.7em;
+                font-weight: 200;
+                filter: $filter-dropshadow-primary;
+            }
+        }
     }
 }
 
 
 .nav-bar {
     // TEMP TOP BAR FOR DESIGN
-    // top: 0px;
+    top: 0px;
 }
