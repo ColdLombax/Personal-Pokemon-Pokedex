@@ -1,4 +1,3 @@
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 This is a simple small pokedex using the 151 original pokemon as a base, the application is expandable for the future, however, will likely stay the same so I can
