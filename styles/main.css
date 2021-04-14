@@ -132,6 +132,21 @@
   z-index: 6;
 }
 
+.pokedex-page .search-bar {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  width: 87%;
+  height: 40px;
+}
+
+.pokedex-page .search-bar:focus {
+  outline: none;
+}
+
 .grid-container {
   width: 100%;
   padding: 25px;

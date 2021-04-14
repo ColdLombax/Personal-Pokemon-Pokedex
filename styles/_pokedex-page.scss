@@ -37,6 +37,22 @@
             z-index: 6;
         }
     }
+
+    .search-bar {
+        background: none;
+        border: none;
+
+        color: $text-primary-light-color;
+        font-size: 1.2em;
+        border-bottom: 2px solid white;
+
+        padding: 10px;
+        width: 87%;
+        height: 40px;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .grid-container {

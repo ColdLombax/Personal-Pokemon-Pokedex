@@ -12,6 +12,13 @@ function createElements() {
     const navbarCircle = newElement('div', 'navbar-circle');
     content.appendChild(navbarCircle);
 
+    const searchBar = newElement('input', 'search-bar');
+    searchBar.placeholder = 'Search...'
+    searchBar.type = 'text';
+    searchBar.id = 'search-bar';
+    searchBar.addEventListener('keyup', search);
+    content.appendChild(searchBar);
+
     const pokeballContainer = newElement('div', 'pokeball-link');
     content.appendChild(pokeballContainer);
 
@@ -22,7 +29,6 @@ function createElements() {
     pokeballContainer.appendChild(pokeballImage);
     pokeballAnimation(pokeballImage);
 
-    // NEW STUFF MAYBE MOVE?
     const gridContainer = newElement('div', 'grid-container');
     content.appendChild(gridContainer);
 
@@ -36,6 +42,24 @@ function createElements() {
             }
         }); 
     })();
+}
+
+function search() {
+    let input, filter, elements, a, txtValue;
+    input = document.getElementById('search-bar');
+    filter = input.value.toUpperCase();
+    elements = document.getElementsByClassName('pokebox');
+    
+    for (let i = 0; i < elements.length; i++) {
+        a = elements[i].getElementsByClassName('name')[0];
+        txtValue = a.textContent || a.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            elements[i].style.display = "";
+        } else {
+            elements[i].style.display = "none";
+        }
+    }
 }
 
 function pokeballAnimation(pokeball) {
