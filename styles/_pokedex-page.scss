@@ -1,3 +1,4 @@
+// POKEDEX PAGE BOILERPLATE STYLING
 .pokedex-page {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@
         padding: 10px;
         width: 87%;
         height: 40px;
+
         &:focus {
             outline: none;
         }
@@ -62,38 +64,44 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    .pokebox {
-        height: 200px;
-        background-color: lightgreen;
 
+    .pokebox, img, .name, .type {
+        filter: $filter-dropshadow-primary;
+    }
+
+    .pokebox {
         display: flex;
         justify-content: center;
         align-items: center;
 
         position: relative;
-        filter: $filter-dropshadow-primary;
+        height: 200px;
 
         &::after {
             content: '';
             background-color: $container-primary-dark-color;
+
             width: 100%;
             height: 10px;
+
             position: absolute;
             top: 80px;
         }
 
+        img, .details-container {
+            position: absolute;
+            position: absolute;
+        }
+
         img {
             width: 100px;
-            position: absolute;
             top: 10px;
             z-index: 1;
-            filter: $filter-dropshadow-primary;
         }
 
         .details-container {
-            position: absolute;
-            top: 135px;
             width: 100px;
+            top: 135px;
 
             display: flex;
             justify-content: center;
@@ -107,26 +115,20 @@
                 width: 100%;
                 font-size: 0.9em;
                 text-align: center;
-                filter: $filter-dropshadow-primary;
             }
 
             .type {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
                 border-radius: 0.8em;
                 background-color: $container-primary-dark-color;
                 padding: 5px;
+
                 font-size: 0.7em;
                 font-weight: 200;
-                filter: $filter-dropshadow-primary;
             }
         }
     }
-}
-
-
-.nav-bar {
-    // TEMP TOP BAR FOR DESIGN
-    top: 0px;
 }

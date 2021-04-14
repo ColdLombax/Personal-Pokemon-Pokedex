@@ -62,21 +62,6 @@
   cursor: pointer;
 }
 
-.nav-bar {
-  background-color: #FF7373;
-  width: 100%;
-  height: 40px;
-  position: absolute;
-  bottom: 0px;
-}
-
-.nav-bar {
-  -webkit-transition-property: height;
-  transition-property: height;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
 .pokedex-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,9 +142,12 @@
   gap: 20px;
 }
 
+.grid-container .pokebox, .grid-container img, .grid-container .name, .grid-container .type {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .grid-container .pokebox {
-  height: 200px;
-  background-color: lightgreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,8 +158,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 200px;
 }
 
 .grid-container .pokebox::after {
@@ -183,19 +170,20 @@
   top: 80px;
 }
 
+.grid-container .pokebox img, .grid-container .pokebox .details-container {
+  position: absolute;
+  position: absolute;
+}
+
 .grid-container .pokebox img {
   width: 100px;
-  position: absolute;
   top: 10px;
   z-index: 1;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .grid-container .pokebox .details-container {
-  position: absolute;
-  top: 135px;
   width: 100px;
+  top: 135px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,8 +202,6 @@
   width: 100%;
   font-size: 0.9em;
   text-align: center;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .grid-container .pokebox .details-container .type {
@@ -233,12 +219,6 @@
   padding: 5px;
   font-size: 0.7em;
   font-weight: 200;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.nav-bar {
-  top: 0px;
 }
 
 * {
@@ -252,5 +232,20 @@ body {
   background-color: #505050;
   font-family: 'Quicksand', sans-serif;
   color: #ffffff;
+}
+
+.nav-bar {
+  background-color: #FF7373;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.nav-bar {
+  -webkit-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=main.css.map */

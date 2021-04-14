@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
-// OTHER SCSS FILES
+// SCSS FILES
 @import './mixins';
 @import './variables';
 
@@ -20,3 +20,17 @@ body {
     color: $text-primary-light-color;
 }
 
+.nav-bar {
+    background-color: $accent-primary-color;
+    width: 100%;
+    height: 40px;
+    
+    position: absolute;
+    bottom: 0px;
+}
+
+// LAUNCH ANIMATIONS
+    .nav-bar {
+        transition-property: height;
+        transition-duration: 1s;
+    }

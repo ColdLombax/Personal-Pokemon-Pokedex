@@ -1,12 +1,13 @@
 import { newElement } from "./_functions";
 
-const content = document.querySelector('.content');
-
 export function loadPokedex() {
    createElements();
 }
 
+const content = document.querySelector('.content');
+
 function createElements() {
+    // MAIN TOPBAR/SEARCH
     content.classList.add('pokedex-page');
 
     const navbarCircle = newElement('div', 'navbar-circle');
@@ -22,16 +23,19 @@ function createElements() {
     const pokeballContainer = newElement('div', 'pokeball-link');
     content.appendChild(pokeballContainer);
 
-    // Pokeball Elements
+    // POKEBALL
     const pokeballImage = document.createElement('img');
     pokeballImage.src = "../images/pokeball-icon-main.svg";
     pokeballImage.alt = 'pokeball icon';
     pokeballContainer.appendChild(pokeballImage);
     pokeballAnimation(pokeballImage);
 
+
+    // GRID
     const gridContainer = newElement('div', 'grid-container');
     content.appendChild(gridContainer);
 
+    // FETCHING NAME DATA FROM POKEAPI
     const firstGenNameList = (() => {
         fetch('https://pokeapi.co/api/v2/pokemon?&limit=151')
         .then(response => response.json())
@@ -44,6 +48,7 @@ function createElements() {
     })();
 }
 
+// SEARCH FUNCTION FOR LIVE UPDATE
 function search() {
     let input, filter, elements, a, txtValue;
     input = document.getElementById('search-bar');
@@ -70,6 +75,7 @@ function pokeballAnimation(pokeball) {
 }
 
 export const loadPokedexData = ((grid) => {
+    // COLOR SELECTION BASED ON TYPE, SCSS VARIABLES WEREN'T WORKING!
     const pickColor = (color) => {
         switch(color) {
             case 'grass':
@@ -110,6 +116,7 @@ export const loadPokedexData = ((grid) => {
                 return '#e9e';
         }
     }
+
     const createGridItem = (name) => {
         const gridBox = newElement('div', 'pokebox');
         grid.appendChild(gridBox);
@@ -125,7 +132,7 @@ export const loadPokedexData = ((grid) => {
         detailsContainer.appendChild(nameText);
         nameText.textContent = `${name}`
 
-        // INPUT TYPES HERE.
+        // FETCH TYPES BASED ON CURRENT NAME AND CREATES TYPE ELEMENTS
         fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
         .then(response => response.json())
         .then(data => {
@@ -156,7 +163,6 @@ export const loadPokedexData = ((grid) => {
             }
         });
     }
-        
     return {
         createGridItem
     }
