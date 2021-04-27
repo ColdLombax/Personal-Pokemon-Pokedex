@@ -12,10 +12,6 @@ Here's why:
 * Test as much of my knowledge as possible without the need for research, I'm happy to search for information; however, I wanted to really test my capabilities. (It isn't all memory though :P).
 * Finally, I wanted to build an application using NPM, Webpack & Git.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
 ### Built With
 
 This project was built using...
