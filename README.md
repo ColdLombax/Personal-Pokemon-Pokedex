@@ -4,7 +4,7 @@ This is a simple small pokedex using the 151 original pokemon as a base, the app
 move onto other projects!
 This was my first personal project so it isn't perfect, but I hope you enjoy it eitherway!
 
-I was struggling to find something regarding API's that I could really enjoy and stick too, as a first 'COMPELTED' project I'm happy to say I acomplished my goal.
+I was struggling to find something regarding API's that I could really enjoy and stick too, as a first 'COMPELTED' api project I'm happy to say I acomplished my goal.
 
 Here's why:
 * I'm a huge fan of the pokemon series and perhaps someday I'll rebuild this to a full scale app!
