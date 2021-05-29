@@ -12,7 +12,7 @@ Here's why:
 * Test as much of my knowledge as possible without the need for research, I'm happy to search for information; however, I wanted to really test my capabilities. (It isn't all memory though :P).
 * Finally, I wanted to build an application using NPM, Webpack & Git.
 
-[Demo Page](https://coldlombax.github.io/pokemon-app/)
+[Demo Page](https://coldlombax.github.io/Personal-Pokemon-Pokedex/)
 
 ### Built With
 
